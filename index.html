@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CC VERIFY</title>
+    <title>CC VERIFY (v0.01)</title>
     <style>
         * {
             margin: 0;
@@ -75,8 +75,8 @@
         }
 
         .box {
-            width: 400px;
-            height: 300px;
+            width: 500px;
+            height: 600px;
             background: linear-gradient(145deg, rgba(30, 41, 88, 0.8), rgba(15, 23, 42, 0.9));
             border-radius: 20px;
             border: 1px solid rgba(59, 130, 246, 0.3);
@@ -177,7 +177,7 @@
             height: 100%;
             border: none;
             border-radius: 10px;
-            pointer-events: none;
+            overflow: auto;
         }
 
         .discord-link {
@@ -253,7 +253,7 @@
         <div class="box">
             <button class="verify-btn" id="verifyBtn">Verify</button>
             <div class="iframe-container" id="iframeContainer">
-                <iframe id="verifyIframe" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <iframe id="verifyIframe" sandbox="allow-scripts allow-forms"></iframe>
             </div>
         </div>
     </div>
