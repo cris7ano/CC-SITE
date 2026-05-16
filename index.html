@@ -227,7 +227,8 @@
             padding: 15px 20px;
             color: #3b82f6;
             font-size: 0.9rem;
-            max-width: 300px;
+            max-width: 400px;
+            min-width: 250px;
             text-align: center;
             opacity: 0;
             visibility: hidden;
@@ -239,6 +240,50 @@
         .info-tooltip.show {
             opacity: 1;
             visibility: visible;
+        }
+
+        @media (max-width: 768px) {
+            .title-text {
+                font-size: 1.5rem;
+            }
+
+            .box {
+                width: 90%;
+                height: 150px;
+            }
+
+            .verify-btn {
+                padding: 12px 40px;
+                font-size: 1rem;
+            }
+
+            .verification-message {
+                font-size: 1rem;
+            }
+
+            .discord-link {
+                bottom: 20px;
+                gap: 15px;
+            }
+
+            .discord-link svg {
+                width: 40px;
+                height: 40px;
+            }
+
+            .question-mark {
+                width: 35px;
+                height: 35px;
+                font-size: 1.2rem;
+            }
+
+            .info-tooltip {
+                bottom: 50px;
+                max-width: 280px;
+                min-width: 200px;
+                font-size: 0.8rem;
+                padding: 12px 15px;
+            }
         }
 
         .particles {
@@ -302,7 +347,7 @@
         <div class="question-mark" id="questionMark">
             ?
             <div class="info-tooltip" id="infoTooltip">
-                Verification is required to access the server. It uses your Roblox account to verify your identity and ensure safety for all members.
+                Verification uses your Roblox account to verify your identity and ensure server safety.
             </div>
         </div>
     </div>
